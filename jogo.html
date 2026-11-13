@@ -31,7 +31,20 @@ Escola">
 
 
 <!--conteudo-->
-
+<main class="jogo-container">
+    <div class="placar-enduro">
+        <span>VELOCIDADE: <strong id="hud-velocidade">0</strong> km/h</span>
+        <span>ULTRAPASSADOS: <strong id="hud-pontos">0</strong></span>
+        <span>RECORDE: <strong id="hud-recorde">0</strong></span>
+    </div>
+    
+    <canvas id="telaEnduro" width="400" height="500"></canvas>
+    
+    <div class="controles-info">
+        <p>Use as setas <strong>⬅️</strong> e <strong>➡️</strong> para desviar | <strong>⬆️</strong> para acelerar | <strong>⬇️</strong> para frear</p>
+        <button id="btnReiniciar" style="display: none;">Jogar Novamente</button>
+    </div>
+</main>
 
 
 
@@ -48,3 +61,6 @@ Política de Privacidade | Proteção de dados | Encarregado de dados</p>
 </footer>
 </body>
 </html>
+
+<!-- Certifique-se de que a chamada do script fique antes de fechar o </body> -->
+<script src="script.js"></script>
